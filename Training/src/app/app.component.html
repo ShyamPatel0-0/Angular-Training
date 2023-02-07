@@ -1,11 +1,6 @@
 <h1>welcome to your {{ title }} !</h1>
 
-<ul *ngFor="let user of users" style="list-style: none;">
-  <li>Name : {{ user.name }}</li>
-  <li>Email : {{ user.email }}</li>
-  <li>Phone : {{ user.phone }}</li>
-  <li>Social Accounts :</li>
-  <ul *ngFor="let account of user.accounts">
-    <li>{{ account }}</li>
-  </ul>
-</ul>
+<h1 [style.color]="color" [style.backgroundColor]="bgcolor">{{ title }}</h1>
+<h1 [style.color]="color" [style.backgroundColor]="bgcolor">heading Tag</h1>
+
+<button (click)="updateColor()">Change Color</button>
