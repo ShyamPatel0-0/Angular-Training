@@ -1,6 +1,11 @@
 <h1>welcome to your {{ title }} !</h1>
 
-<h5>User Details :</h5>
-<h5 *ngFor="let item of userDetails">
-  {{ item.name }} , {{ item.email }}, {{ item.phone }}
-</h5>
+<ul *ngFor="let user of users" style="list-style: none;">
+  <li>Name : {{ user.name }}</li>
+  <li>Email : {{ user.email }}</li>
+  <li>Phone : {{ user.phone }}</li>
+  <li>Social Accounts :</li>
+  <ul *ngFor="let account of user.accounts">
+    <li>{{ account }}</li>
+  </ul>
+</ul>
