@@ -1,6 +1,8 @@
-<app-header></app-header>
-<h1>welcome to your {{ title }} !</h1>
+<h1>{{ title }} !</h1>
 
-<h1 [style.color]="color" [style.backgroundColor]="bgcolor">{{ title }}</h1>
+<input type="text" placeholder="enter new task" #task /><br /><br />
+<button (click)="addTask(task.value)">Add Task</button>
 
-<button (click)="updateColor()">Change Color</button>
+<ul *ngFor="let item of list">
+  <li>{{ item.name }} <button (click)="removeTask(item.id)">Remove</button></li>
+</ul>

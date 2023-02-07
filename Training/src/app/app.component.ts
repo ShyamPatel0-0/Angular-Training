@@ -7,12 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Training';
-  flag = true;
-  color = 'pink';
-  bgcolor = 'green';
-  updateColor() {
-    this.flag
-      ? ((this.color = 'blue'), (this.bgcolor = 'red'), (this.flag = false))
-      : ((this.color = 'pink'), (this.bgcolor = 'green'), (this.flag = true));
+  list: any[] = [];
+  id: number = 0;
+  addTask(item: string) {
+    this.list.push({
+      id: this.id,
+      name: item,
+    });
+    console.log(this.list);
+    this.id++;
+  }
+  removeTask(id: number) {
+    this.list = this.list.filter((item) => item.id !== id);
   }
 }
