@@ -6,7 +6,6 @@
   },
   "dependencies": {
     "@angular/cli": "^15.1.4",
-    "@octokit/rest": "^19.0.7",
     "git": "^0.1.5"
   }
 }
