@@ -1,8 +1,8 @@
 <h1>welcome to your {{ title }} !</h1>
-<button (click)="getData('button-click')">Call log</button>
-<input
-  type="text"
-  #box
-  placeholder="type something please"
-  (blur)="getData(box.value)"
-/>
+
+<div [ngSwitch]="color">
+  <h1 *ngSwitchCase="'indigo'" style="color : indigo">Indigo Color</h1>
+  <h1 *ngSwitchCase="'green'" style="color : Green">Green Color</h1>
+  <h1 *ngSwitchCase="'pink'" style="color : pink">Pink Color</h1>
+  <h1 *ngSwitchDefault>Unknown Color</h1>
+</div>

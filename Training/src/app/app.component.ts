@@ -7,7 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Training';
-  getData(value: string) {
-    console.log(value);
-  }
+  color = '123';
 }
