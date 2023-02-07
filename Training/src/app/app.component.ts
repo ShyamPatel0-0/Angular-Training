@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Training';
-  color = '123';
+  users = ['Anil', 'Pranav', 'Shyam', 'Raj'];
+  userDetails = [
+    { name: 'Anil', email: 'anil@test.com', phone: '8888' },
+    { name: 'Pranav', email: 'pranav@test.com', phone: '1111' },
+    { name: 'Shyam', email: 'shyam@test.com', phone: '5555' },
+    { name: 'Raj', email: 'raj@test.com', phone: '6666' },
+  ];
 }
