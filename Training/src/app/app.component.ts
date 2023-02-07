@@ -7,18 +7,22 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Training';
-  userDetails = [
-    {
-      name: 'Anil Sidhu',
-      email: 'anil@gmail.com',
-    },
-    {
-      name: 'Shyam Mendapara',
-      email: 'shyam@gmail.com',
-    },
-    {
-      name: 'Pranav Chanapara',
-      email: 'pranav@gmail.com',
-    },
-  ];
+  // userDetails = [
+  //   {
+  //     name: 'Anil Sidhu',
+  //     email: 'anil@gmail.com',
+  //   },
+  //   {
+  //     name: 'Shyam Mendapara',
+  //     email: 'shyam@gmail.com',
+  //   },
+  //   {
+  //     name: 'Pranav Chanapara',
+  //     email: 'pranav@gmail.com',
+  //   },
+  // ];
+
+  updateData(item:string) {
+    console.log(item);
+  }
 }
