@@ -7,7 +7,11 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'Training';
+  title = 'Training is good ';
   name: string = '';
-  
+  today = Date();
+  user = {
+    name: 'shyam',
+    age: 24,
+  };
 }
