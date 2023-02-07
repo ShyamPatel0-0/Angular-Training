@@ -1,8 +1,4 @@
 <h1>{{ title }} !</h1>
+<app-child [item1]="data" [item2]="data * 2"></app-child>
 
-<input type="text" placeholder="enter new task" #task /><br /><br />
-<button (click)="addTask(task.value)">Add Task</button>
-
-<ul *ngFor="let item of list">
-  <li>{{ item.name }} <button (click)="removeTask(item.id)">Remove</button></li>
-</ul>
+<button (click)="updateChild()">Update Child Component</button>

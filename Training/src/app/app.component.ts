@@ -7,17 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Training';
-  list: any[] = [];
-  id: number = 0;
-  addTask(item: string) {
-    this.list.push({
-      id: this.id,
-      name: item,
-    });
-    console.log(this.list);
-    this.id++;
-  }
-  removeTask(id: number) {
-    this.list = this.list.filter((item) => item.id !== id);
+  data = 20;
+  updateChild() {
+    this.data = Math.floor(Math.random() * 1000);
   }
 }
