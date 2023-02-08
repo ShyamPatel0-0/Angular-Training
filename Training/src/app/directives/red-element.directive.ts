@@ -1,11 +1,15 @@
-import { Directive, ElementRef } from '@angular/core';
+import { Directive, ElementRef, Input, Renderer2 } from '@angular/core';
 
 @Directive({
   selector: '[appRedElement]',
 })
 export class RedElementDirective {
-  constructor(el: ElementRef) {
+  @Input() color: string = '';
+  constructor(private el: ElementRef, private renderer: Renderer2) {
     el.nativeElement.innerHTML = 'Focus on ';
-    el.nativeElement.style.color = 'red';
+    // el.nativeElement.style.color = color;
+  }
+  ngOnInit() {
+    this.renderer.setStyle(this.el.nativeElement, 'color', this.color);
   }
 }
