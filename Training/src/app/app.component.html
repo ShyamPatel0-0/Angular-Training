@@ -1,16 +1,9 @@
-<h1>{{ title | uppercase | titlecase }} !</h1>
-<h1>{{ title | slice: 3:6 }} !</h1>
-<h1>{{ title | slice: 3:6 | uppercase }} !</h1>
-<input type="text" [(ngModel)]="name" />
-<h3>{{ name }}</h3>
+<h1>{{ title }} !</h1>
 
-<h3>{{ today | date: 'fullDate' }}</h3>
-
-<h3>{{ user | json | uppercase }}</h3>
-<h3>{{ user }}</h3>
-
-<h3>{{ 2000.34586 | number: '4.1-2' }}</h3>
-
-<h3>{{ 20 | currency: 'INR' }}</h3>
-
-<h3>{{ 20 | usdInr: 72 }}</h3>
+<form #loginForm="ngForm" (ngSubmit)="userLogin(loginForm.value)">
+  <input type="text" ngModel placeholder="Enter Name" name="name" />
+  <br /><br />
+  <input type="password" ngModel placeholder="Enter Password" name="password" />
+  <br /><br />
+  <button>Login</button>
+</form>
