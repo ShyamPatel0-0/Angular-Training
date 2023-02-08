@@ -7,6 +7,9 @@
     placeholder="Enter Name"
     name="user"
   />
+  <span style="color:red" *ngIf="user && user.invalid && user.touched"
+    >Not Valid</span
+  >
   <br /><br />
   <input
     type="password"
@@ -14,6 +17,11 @@
     placeholder="Enter Password"
     name="password"
   />
+  <span
+    style="color:red"
+    *ngIf="password && password.invalid && password.touched"
+    >Not Valid</span
+  >
   <br /><br />
-  <button>Login</button>
+  <button [disabled]="loginForm.invalid">Login</button>
 </form>
