@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-
+import {UsersdataService} from './service/usersdata.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,6 +8,11 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class AppComponent {
   title = 'Training';
-
- 
+  users:any;
+  constructor(private userdata:UsersdataService) {
+    userdata.users().subscribe((data)=> {
+      this.users = data;
+      console.log(this.users);
+    });
+  }
 }

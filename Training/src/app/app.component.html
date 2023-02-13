@@ -1,11 +1,16 @@
 <h1>{{ title }} !</h1>
 
-<a routerLink="">Home</a><br />
-<a routerLink="about">About</a><br />
-<a routerLink="user">User</a><br />
+<ol *ngFor="let user of users">
+   Patient : {{user.First_name}} {{user.Middle_name}} {{user.Last_name}}
+   <ul>
+        <li>Char   : {{user.Chart}}</li>
+        <li>Gender : {{user.Gender}}</li>
+        <li>DOB    : {{user.Date_of_birth}}</li>
+   </ul>   
+   
 
-<a routerLink="user/20">Sam</a><br />
-<a routerLink="user/10">Anil</a><br />
-<a routerLink="user/30">Bhasker</a><br />
+</ol>
 
-<h1><router-outlet></router-outlet></h1>
+<!-- <app-footer></app-footer> -->
+
+
