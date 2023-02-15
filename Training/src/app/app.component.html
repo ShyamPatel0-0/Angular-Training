@@ -1,16 +1,13 @@
 <h1>{{ title }} !</h1>
 
-<ol *ngFor="let user of users">
-   Patient : {{user.First_name}} {{user.Middle_name}} {{user.Last_name}}
-   <ul>
-        <li>Char   : {{user.Chart}}</li>
-        <li>Gender : {{user.Gender}}</li>
-        <li>DOB    : {{user.Date_of_birth}}</li>
-   </ul>   
-   
-
-</ol>
-
-<!-- <app-footer></app-footer> -->
+<form #usersForm="ngForm" (ngSubmit)="getUserFormData(usersForm.value)">
+    <input ngModel type="text" name="First_name" placeholder="Enter fName" /> <br><br>
+    <input ngModel type="text" name="Middle_name" placeholder="Enter mname" /> <br><br>
+    <input ngModel type="text" name="Last_name" placeholder="Enter lname" /> <br><br>
+    <input ngModel type="text" name="Gender" placeholder="Enter gender" /> <br><br>
+    <input ngModel type="text" name="Date_of_birth" placeholder="Enter Date" /> <br><br>
+    <input ngModel type="text" name="ImagePath" placeholder="Enter ImagePath" value="/PatientImages/default.png"/> <br><br>
+    <button>Add New User</button>
+</form>
 
 

@@ -10,4 +10,7 @@ export class UsersdataService {
   users() {
     return this.http.get(this.url);
   }
+  saveUsers(data:any) {
+    return this.http.post(this.url,data);
+  }
 }

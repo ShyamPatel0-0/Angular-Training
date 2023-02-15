@@ -15,4 +15,11 @@ export class AppComponent {
       console.log(this.users);
     });
   }
+
+  getUserFormData(data : any) {
+    console.log(data);
+    this.userdata.saveUsers(data).subscribe((res) => {
+      console.log(res);
+    })
+  }
 }
