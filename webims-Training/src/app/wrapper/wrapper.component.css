@@ -1,0 +1,8 @@
+.wrapper-content { 
+    width: 85vw;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 100vh;
+    background-color: aquamarine;
+    display: flex;
+}

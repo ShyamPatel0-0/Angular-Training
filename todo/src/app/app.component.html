@@ -1,0 +1,10 @@
+<h1>{{title}}</h1>
+
+<input type="text" placeholder="enter new task" #task /> &nbsp;
+<button (click)="addTask(task.value)">Add Task</button><br /><br />
+
+<ul *ngFor="let item of list; let i = index">
+    <li><mat-checkbox class="box" [(ngModel)]="isChecked[i]"></mat-checkbox> {{ item.name }} <button (click)="removeTask(i,item.id)">Remove</button> <button (click)="status(i)">Status Task</button></li>
+</ul>
+
+

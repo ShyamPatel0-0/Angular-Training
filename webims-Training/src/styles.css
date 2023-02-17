@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+/*--------------BODY-----------------*/
+body {
+    /* background-color: #f6f6f6; */
+    background-color: green;
+    font-family: 'Lato', sans-serif;
+    overflow:hidden ;
+    color:#243b53; 
+    height: auto;
+    /* scale: .09; */
+    
+}
+*{    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*-----------Scroll CSS---------------*/
+/* width */
+::-webkit-scrollbar {
+    width: 0.45rem;
+    height: 0.45rem;
+    background-color: #909090;
+    opacity: .3;
+}
+
+
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #f8f8f9; 
+    background-color: #f8f8f9;
+    border-radius: 2px;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #d9e2ec; 
+    border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+   background: #9fb3c8; 
+}

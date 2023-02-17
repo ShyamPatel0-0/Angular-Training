@@ -1,0 +1,17 @@
+
+
+/* app-sidebar, app-wrapper{
+    display: inline-block;
+    
+} */
+
+.container {
+    display: flex;
+    /* flex-direction: column; */
+  }
+
+.component {
+    width: 100%;
+    /* height: 200px; */
+    
+}
