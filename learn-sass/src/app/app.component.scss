@@ -1,0 +1,21 @@
+@import './variables';
+
+.main {
+   
+    @include flexCenter(row);
+
+    width: 80%;
+    margin: 0 auto;
+
+    #{&}__paragraph {
+        font-weight: weight(bold) ;
+        &:hover {
+            color: $custom-color;
+        }
+    }  
+    
+    @include mobile {
+        flex-direction: column;
+    }
+}
+

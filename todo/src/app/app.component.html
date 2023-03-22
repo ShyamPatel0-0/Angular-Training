@@ -1,10 +1,27 @@
-<h1>{{title}}</h1>
+<div class="header"><h1 class="title">{{title}}</h1></div>
+<br>
+<textarea  placeholder="Enter new task" #task id="task"></textarea> 
+<button (click)="addTask(task.value, $event)" id="addTask-btn" value="add" #taskBtn>Add Task</button><br /><br />
+<p style="text-align: center; color:green; font-size: 25px; font-weight: 550; margin-right: 20%;">Task List</p>
+<div class="list-parent">
+    
+    <ul *ngFor="let item of list; let i = index" class="list">
+        <li>
+            <span class="" #work>
+                <mat-checkbox [(ngModel)]="isChecked[i]" [color] ="'primary'" (change)="taskCompleted(this.work)"></mat-checkbox> 
+                {{ item.name }} 
+            </span>
 
-<input type="text" placeholder="enter new task" #task /> &nbsp;
-<button (click)="addTask(task.value)">Add Task</button><br /><br />
+            <button class="box" (click)="editTask(i,item.id, this.task, this.taskBtn)">Edit</button>
+            <button class="box" (click)="removeTask(i,item.id)">Remove</button> 
+        </li>
+    </ul>
+    
+</div>
 
-<ul *ngFor="let item of list; let i = index">
-    <li><mat-checkbox class="box" [(ngModel)]="isChecked[i]"></mat-checkbox> {{ item.name }} <button (click)="removeTask(i,item.id)">Remove</button> <button (click)="status(i)">Status Task</button></li>
-</ul>
+<footer>
+    <p>Todo-list !  </p>
+</footer>
 
+<!-- <button (click)="status(i)">Status Task</button> -->
 

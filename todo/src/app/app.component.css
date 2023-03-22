@@ -1,0 +1,101 @@
+.header {
+    background-color: green;
+    height: 70px;
+    font-family: cursive;
+}
+.title{
+    padding: 10px;
+    padding-left: 20px;
+    color:white;
+    font-size: 40px;
+}
+
+#task, #addTask-btn {
+    border: 1px solid green;
+}
+.box {
+    border: 2px solid #af017200;
+    float: right;
+    margin-top: 7px;
+    margin-right: 5px;
+    
+    
+}
+#task {
+    width: 70%;
+    margin-left: 10%;
+    height: 8%;
+    font-size: xx-large;
+    color: green;
+    padding: 10px;
+    caret-color: rgb(0, 200, 0);
+    
+}
+#task::placeholder {
+    color:rgba(0, 128, 0, 0.514);
+}
+
+#task:focus {
+    outline: 1px solid  rgb(0, 0, 0);
+    
+}
+#addTask-btn, .box {
+    background-color: green;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#addTask-btn {
+    margin-left: 10px;
+
+    padding: 10px;
+}
+ 
+.list {
+    margin-left: 25%;
+    margin-right: 40%;
+    margin-bottom: 10px;
+    list-style-type: none;
+    
+}
+
+.list:nth-child(odd) {
+    background-color: rgb(167, 165, 165) ;
+}
+
+.list:nth-child(even) {
+    background-color: rgb(245, 242, 242) ;
+}
+
+.list-parent {
+    /* background-color: green; */
+    max-height: 51%;
+    overflow-y: auto;
+    /* border: 1px solid green; */
+}
+.list-parent ul {
+    
+}
+
+footer {
+    background-color: green ;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-size: xx-large;
+    font-family: cursive ;
+}
+
+.taskCompleted{
+    text-decoration: line-through;
+}
+
+::selection {
+    background-color: black;
+    color: white;
+    
+}
+
