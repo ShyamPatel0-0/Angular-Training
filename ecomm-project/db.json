@@ -1,0 +1,72 @@
+{
+  "seller": [
+    {
+      "name": "Shyam Mendpara",
+      "email": "abc@gmail.com",
+      "password": "abc123",
+      "id": 1
+    },
+    {
+      "name": "sam Mendpara",
+      "email": "xyz@gmail.com",
+      "password": "abc123",
+      "id": 2
+    },
+    {
+      "name": "example",
+      "password": "12345",
+      "email": "example@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "peter",
+      "password": "abc123",
+      "email": "peter@test.com",
+      "id": 4
+    },
+    {
+      "name": "bruce",
+      "password": "abc123",
+      "email": "bruce@test.com",
+      "id": 5
+    },
+    {
+      "name": "test1",
+      "password": "abc123",
+      "email": "test1@test.com",
+      "id": 6
+    },
+    {
+      "name": "test2",
+      "password": "abc123",
+      "email": "test2@test.com",
+      "id": 7
+    },
+    {
+      "name": "test3",
+      "password": "abc123",
+      "email": "test3@test.com",
+      "id": 8
+    }
+  ],
+  "products": [
+    {
+      "name": "iphone 14",
+      "price": "10000",
+      "category": "mobiles",
+      "color": "black",
+      "image": "https://www.91-img.com/gallery_images_uploads/4/1/41364101e71d4fe380d2e83eb6fd7151f3053344.jpg?tr=h-550,w-0,c-at_max",
+      "description": "hello users",
+      "id": 3
+    },
+    {
+      "name": "iphone 14",
+      "price": "10000",
+      "category": "mobiles",
+      "color": "black",
+      "image": "https://www.91-img.com/gallery_images_uploads/4/1/41364101e71d4fe380d2e83eb6fd7151f3053344.jpg?tr=h-550,w-0,c-at_max",
+      "description": "Good product",
+      "id": 4
+    }
+  ]
+}
