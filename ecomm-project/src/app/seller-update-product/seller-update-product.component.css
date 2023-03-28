@@ -1,0 +1,10 @@
+.update-product h1, .update-product p{
+    text-align: center;
+    /* margin-bottom: 50px; */
+    /* margin-top: 80px; */
+    
+}
+
+.update-product h1 {
+    color: blueviolet;
+}

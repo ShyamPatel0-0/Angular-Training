@@ -11,6 +11,11 @@ table td, table th {
 }
 
 img {
-    width: 100px;
+    width: 120px;
     height: 150px;
+}
+
+.adjust-update-link {
+    color:blueviolet;
+    margin-left: 10px;
 }

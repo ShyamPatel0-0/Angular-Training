@@ -1,6 +1,8 @@
 import { JsonPipe } from '@angular/common';
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Product } from '../data-type';
+import { ProductService } from '../services/product.service';
 
 @Component({
   selector: 'app-header',
@@ -10,7 +12,8 @@ import { Router } from '@angular/router';
 export class HeaderComponent {
   menuType: string = '';
   sellerName:string = '';
-  constructor(private route: Router) {}
+  searchResult:undefined|Product[];
+  constructor(private route: Router, private product:ProductService, private activeRoute: ActivatedRoute) {}
   
 
   ngOnInit():void {    
@@ -35,6 +38,33 @@ export class HeaderComponent {
   logout() {
     localStorage.removeItem('seller');
     this.route.navigate(['/']);
+  }
+
+  searchProduct(query:KeyboardEvent) {
+    if(query) {
+      const element = query.target as HTMLInputElement;
+      console.log(element.value);
+      this.product.searchProducts(element.value).subscribe((result)=>{
+        //console.log(result);
+        if(result.length > 3) {
+          result.length = 3;
+        }          
+        this.searchResult = result;
+      });
+
+    }
+  }
+
+  hideSearch() {
+    this.searchResult = undefined;
+  }
+
+  submitSearch(query:string) {
+      //console.log("Query : ",query);
+      this.route.navigate([`search/${query}`]);
+  }
+  redirectToDetails(val:number) {
+    this.route.navigate([`/product/${val}`]);
   }
 
 }

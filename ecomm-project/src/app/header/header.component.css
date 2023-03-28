@@ -1,6 +1,9 @@
 .nav {
     display: flex;
     justify-content: space-between;
+    /* background-color: grey; */
+    width: 100%;
+    /* width: 138%; */
 }
 .nav h1 {
     color: blueviolet;
@@ -43,7 +46,7 @@
     color: blueviolet;
     border-color: blueviolet;
     border: 1px solid blueviolet;
-    height: 35px;
+    height: 39px;
     border-right: 0px;
 }
 
@@ -53,4 +56,19 @@
     border: 1px solid blueviolet;
     height: 39px;
     border-left: 0px;
+}
+
+.suggested-result {
+    position: absolute;
+    display: list-item !important;
+    z-index: 10;
+    background: white;
+    width: 300px;
+    top: 40px;
+    border: 1px solid #ddd;
+}
+
+.suggested-result li {
+    border: 1px solid #ddd;
+    padding: 10px;
 }
