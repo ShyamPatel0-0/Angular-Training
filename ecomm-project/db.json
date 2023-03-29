@@ -86,5 +86,19 @@
       "image": "https://img.freepik.com/premium-photo/01052021-russia-moscow-closeup-black-adidas-canvas-sneakers-isolated-white-background-product-shot-side-view_136344-2885.jpg",
       "id": 6
     }
+  ],
+  "users": [
+    {
+      "name": "shyam",
+      "email": "sam.mendpara@gamil.com",
+      "password": "abc123",
+      "id": 1
+    },
+    {
+      "name": "pranav",
+      "email": "pranav@test.com",
+      "password": "abc123",
+      "id": 2
+    }
   ]
 }

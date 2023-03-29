@@ -13,12 +13,15 @@ export class ProductDetailsComponent {
   productQuantity:number = 1;
   constructor(private activeRoute:ActivatedRoute, private product:ProductService) {}
   ngOnInit():void {
-    let productId = this.activeRoute.snapshot.paramMap.get('productId');
-    //console.log(productId);
-    productId && this.product.getProduct(productId).subscribe((result)=>{
-      console.log(result);
-      this.productData = result;
+    this.activeRoute.params.subscribe(params => {
+      let productId = this.activeRoute.snapshot.paramMap.get('productId');
+      //console.log("ProudctID : ",productId);
+      productId && this.product.getProduct(productId).subscribe((result)=>{
+        //console.log("result : " , result);
+        this.productData = result;
+      });
     });
+    
   }
   handleQuantity(val:string) {
     if(this.productQuantity < 20 && val === 'plus') this.productQuantity++;

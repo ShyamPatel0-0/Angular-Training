@@ -13,6 +13,7 @@ export class HeaderComponent {
   menuType: string = '';
   sellerName:string = '';
   searchResult:undefined|Product[];
+  userName:string="";
   constructor(private route: Router, private product:ProductService, private activeRoute: ActivatedRoute) {}
   
 
@@ -27,7 +28,12 @@ export class HeaderComponent {
               let sellerData = sellerStore && JSON.parse(sellerStore)[0];
               this.sellerName = sellerData.name;
             }
-        }else {
+        }else if(localStorage.getItem('user')) {
+            let userStore = localStorage.getItem('user');
+            let userData = userStore && JSON.parse(userStore);
+            this.userName = userData.name;
+            this.menuType = 'user';
+        } else {
           //console.log("out seller area");
           this.menuType ="default";
         }
@@ -40,10 +46,15 @@ export class HeaderComponent {
     this.route.navigate(['/']);
   }
 
+  userLogout() {
+    localStorage.removeItem('user');
+    this.route.navigate(['/user-auth']);
+  }
+
   searchProduct(query:KeyboardEvent) {
     if(query) {
       const element = query.target as HTMLInputElement;
-      console.log(element.value);
+      //console.log(element.value);
       this.product.searchProducts(element.value).subscribe((result)=>{
         //console.log(result);
         if(result.length > 3) {
