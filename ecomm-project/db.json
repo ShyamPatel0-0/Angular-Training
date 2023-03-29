@@ -100,5 +100,127 @@
       "password": "abc123",
       "id": 2
     }
+  ],
+  "cart": [
+    {
+      "name": "iphone 14",
+      "price": "200000",
+      "color": "black",
+      "category": "mobiles",
+      "description": "hello shyam",
+      "image": "https://www.91-img.com/gallery_images_uploads/4/1/41364101e71d4fe380d2e83eb6fd7151f3053344.jpg?tr=h-550,w-0,c-at_max",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 3,
+      "id": 1
+    },
+    {
+      "name": "Canvas Shoes",
+      "price": "4000",
+      "color": "Black",
+      "category": "canvas",
+      "description": "nice shoes for party",
+      "image": "https://img.freepik.com/premium-photo/01052021-russia-moscow-closeup-black-adidas-canvas-sneakers-isolated-white-background-product-shot-side-view_136344-2885.jpg",
+      "quantity": 4,
+      "productId": 6,
+      "userId": 2,
+      "id": 2
+    },
+    {
+      "name": "iphone 13",
+      "price": "10000",
+      "color": "blue",
+      "category": "mobiles",
+      "description": "Good product",
+      "image": "https://www.91-img.com/gallery_images_uploads/e/8/e8c547cf4a99cbf2af7232f01cb5647357e70a29.jpg?w=0&h=901&q=80&c=1",
+      "quantity": 7,
+      "productId": 4,
+      "userId": 2,
+      "id": 3
+    },
+    {
+      "name": "Hp Laptop",
+      "price": "48500",
+      "color": "grey",
+      "category": "HP envy 15",
+      "description": "4gb ram , 500gb SSD, 12hour battery backup",
+      "image": "https://media.istockphoto.com/id/498569393/photo/windows-8-1-on-hp-pavilion-ultrabook.jpg?s=612x612&w=0&k=20&c=kmqDUy2J3YpPwp3vVJCIZnidDFc9BvYPWDD0Vnf4GzQ=",
+      "quantity": 6,
+      "productId": 5,
+      "userId": 2,
+      "id": 4
+    },
+    {
+      "name": "iphone 14",
+      "price": "200000",
+      "color": "black",
+      "category": "mobiles",
+      "description": "hello shyam",
+      "image": "https://www.91-img.com/gallery_images_uploads/4/1/41364101e71d4fe380d2e83eb6fd7151f3053344.jpg?tr=h-550,w-0,c-at_max",
+      "quantity": 7,
+      "productId": 3,
+      "userId": 2,
+      "id": 5
+    },
+    {
+      "name": "iphone 14",
+      "price": "200000",
+      "color": "black",
+      "category": "mobiles",
+      "description": "hello shyam",
+      "image": "https://www.91-img.com/gallery_images_uploads/4/1/41364101e71d4fe380d2e83eb6fd7151f3053344.jpg?tr=h-550,w-0,c-at_max",
+      "quantity": 3,
+      "productId": 3,
+      "userId": 1,
+      "id": 6
+    },
+    {
+      "name": "Hp Laptop",
+      "price": "48500",
+      "color": "grey",
+      "category": "HP envy 15",
+      "description": "4gb ram , 500gb SSD, 12hour battery backup",
+      "image": "https://media.istockphoto.com/id/498569393/photo/windows-8-1-on-hp-pavilion-ultrabook.jpg?s=612x612&w=0&k=20&c=kmqDUy2J3YpPwp3vVJCIZnidDFc9BvYPWDD0Vnf4GzQ=",
+      "quantity": 1,
+      "productId": 5,
+      "userId": 1,
+      "id": 7
+    },
+    {
+      "name": "Canvas Shoes",
+      "price": "4000",
+      "color": "Black",
+      "category": "canvas",
+      "description": "nice shoes for party",
+      "image": "https://img.freepik.com/premium-photo/01052021-russia-moscow-closeup-black-adidas-canvas-sneakers-isolated-white-background-product-shot-side-view_136344-2885.jpg",
+      "quantity": 1,
+      "productId": 6,
+      "userId": 1,
+      "id": 8
+    },
+    {
+      "name": "Hp Laptop",
+      "price": "48500",
+      "color": "grey",
+      "category": "HP envy 15",
+      "description": "4gb ram , 500gb SSD, 12hour battery backup",
+      "image": "https://media.istockphoto.com/id/498569393/photo/windows-8-1-on-hp-pavilion-ultrabook.jpg?s=612x612&w=0&k=20&c=kmqDUy2J3YpPwp3vVJCIZnidDFc9BvYPWDD0Vnf4GzQ=",
+      "quantity": 3,
+      "userId": 2,
+      "productId": 5,
+      "id": 9
+    },
+    {
+      "name": "iphone 13",
+      "price": "10000",
+      "color": "blue",
+      "category": "mobiles",
+      "description": "Good product",
+      "image": "https://www.91-img.com/gallery_images_uploads/e/8/e8c547cf4a99cbf2af7232f01cb5647357e70a29.jpg?w=0&h=901&q=80&c=1",
+      "quantity": 3,
+      "userId": 1,
+      "productId": 4,
+      "id": 10
+    }
   ]
 }

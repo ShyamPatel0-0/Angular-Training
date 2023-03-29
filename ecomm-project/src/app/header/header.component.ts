@@ -14,6 +14,7 @@ export class HeaderComponent {
   sellerName:string = '';
   searchResult:undefined|Product[];
   userName:string="";
+  cartItems = 0;
   constructor(private route: Router, private product:ProductService, private activeRoute: ActivatedRoute) {}
   
 
@@ -39,6 +40,16 @@ export class HeaderComponent {
         }
       }
     });
+
+    let cartData = localStorage.getItem('localCart');
+    if(cartData) {
+      this.cartItems = JSON.parse(cartData).length;
+    }
+
+    this.product.cartData.subscribe((items)=>{
+        this.cartItems = items.length;
+    })
+
   }
 
   logout() {
@@ -49,6 +60,7 @@ export class HeaderComponent {
   userLogout() {
     localStorage.removeItem('user');
     this.route.navigate(['/user-auth']);
+    this.product.cartData.emit([]);
   }
 
   searchProduct(query:KeyboardEvent) {

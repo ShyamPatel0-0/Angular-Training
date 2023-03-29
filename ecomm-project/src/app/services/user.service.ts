@@ -29,8 +29,7 @@ export class UserService {
   }
 
   userLogin(data:Login) {
-    this.http.get<SignUp[]>(`http://localhost:3000/users?email=${data.email}&password=${data.password}`,{observe:'response'}).subscribe((result)=> {
-       
+    this.http.get<SignUp[]>(`http://localhost:3000/users?email=${data.email}&password=${data.password}`,{observe:'response'}).subscribe((result)=> {       
     if(result && result.body?.length) {
         //console.log(result);
         this.invalidUserAuth.emit(false);
