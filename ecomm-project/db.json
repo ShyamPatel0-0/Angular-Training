@@ -101,40 +101,15 @@
       "id": 2
     }
   ],
-  "cart": [
-    {
-      "name": "iphone 13",
-      "price": "10000",
-      "color": "blue",
-      "category": "mobiles",
-      "description": "Good product",
-      "image": "https://www.91-img.com/gallery_images_uploads/e/8/e8c547cf4a99cbf2af7232f01cb5647357e70a29.jpg?w=0&h=901&q=80&c=1",
-      "quantity": 3,
-      "userId": 2,
-      "productId": 4,
-      "id": 1
-    },
-    {
-      "name": "Hp Laptop",
-      "price": "48500",
-      "color": "grey",
-      "category": "HP envy 15",
-      "description": "4gb ram , 500gb SSD, 12hour battery backup",
-      "image": "https://media.istockphoto.com/id/498569393/photo/windows-8-1-on-hp-pavilion-ultrabook.jpg?s=612x612&w=0&k=20&c=kmqDUy2J3YpPwp3vVJCIZnidDFc9BvYPWDD0Vnf4GzQ=",
-      "quantity": 2,
-      "userId": 2,
-      "productId": 5,
-      "id": 2
-    }
-  ],
+  "cart": [],
   "orders": [
     {
       "email": "pranav@test.com",
       "address": "noida sector 1",
       "contact": "1234567891",
-      "totalPrice": 137260,
+      "totalPrice": 320860,
       "userId": 2,
-      "id": 1
+      "id": 2
     }
   ]
 }

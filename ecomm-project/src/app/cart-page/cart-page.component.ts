@@ -21,6 +21,21 @@ export class CartPageComponent {
   constructor(private product:ProductService, private router:Router) {}
 
   ngOnInit():void {
+    this.loadDetails();
+  }
+
+  checkout() {
+    this.router.navigate(['checkout']);
+  }
+
+  removeToCart(cartId:number | undefined) {
+      
+      cartId && this.product.removeToCart(cartId).subscribe(()=> {
+        this.loadDetails();
+      });
+  }
+
+  loadDetails() {
     this.product.currentCart().subscribe((result)=> {
       this.cartData = result;
       let price = 0;
@@ -34,14 +49,13 @@ export class CartPageComponent {
       this.priceSummary.delivery = 100;
 
       this.priceSummary.total = (this.priceSummary.price  + this.priceSummary.tax + this.priceSummary.delivery) - (this.priceSummary.discount);
-      console.log(this.priceSummary);
+      //console.log(this.priceSummary);
       
+      if(!this.cartData.length) {
+        this.router.navigate(['/']);
+      }
       
     })
-  }
-
-  checkout() {
-    this.router.navigate(['checkout']);
   }
 
 }
