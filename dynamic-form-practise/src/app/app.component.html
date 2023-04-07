@@ -1,0 +1,51 @@
+<form [formGroup]="patientDetails" (ngSubmit)="formSubmit()">
+
+  <label for="firstName">FirstName:</label>
+  <input type="text" formControlName="firstName"> <br>
+  
+  <label for="lastName">LastName:</label>
+  <input type="text"  formControlName="lastName"> <br><br>
+  
+  <div formArrayName="address">
+
+    <div *ngFor="let item of addressControl.controls ; let i = index;">
+
+      <div [formGroupName]="i">
+        <input type="text" formControlName="city" placeholder="city">
+        <input type="text" formControlName="state" placeholder="state"><br>
+
+
+        <label for="phone">Phone : </label>
+
+        <div formArrayName="phone"> 
+          <div *ngFor="let p of phoneControl(i).controls let j = index">
+            <div [formGroupName]="j">
+                <input name="type" type="text" formControlName="type" placeholder="type">                
+                <input type="text" formControlName="phoneNumber" placeholder="Phone number">
+                <button type="button" (click)="removePhoneItem(i,j)">Remove Phone</button>
+                <!-- <span *ngIf="phoneControl(i).controls[j].get('type')?.invalid && phoneControl(i).controls[j].get('type')?.touched">Type is required !</span> -->
+            </div>
+          </div>
+        </div>
+
+        
+        <button type="button" (click)="addPhoneItem(i)">Add Phone</button>
+        <br><br>
+
+
+        <button type="button" (click)="removeItem(i)">Remove Item</button>
+        <br><br>
+      </div>
+
+    </div>
+
+  </div>
+
+  <button type="button" (click)="addItem()">Add Item</button>
+  
+  <button [disabled]="!patientDetails.valid" type="submit">Submit</button>
+  
+</form>
+
+<!-- <app-quiz></app-quiz>
+<app-quiz-result *ngIf="submit"></app-quiz-result> -->

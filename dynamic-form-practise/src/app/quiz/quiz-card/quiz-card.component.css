@@ -1,0 +1,43 @@
+.quiz-card {
+    border: .2rem solid #000 ;
+    background-color: white;
+    border-radius: 1rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.card {
+    font-size: 20px;
+}
+
+.card p {
+    padding-left: 15px;
+}
+
+.card label {
+    
+    padding-left: 10px;
+
+
+}
+
+.submit-btn-parent {
+    text-align: end;
+}
+
+.submit-btn {
+    margin-right: 8%;
+    background-color: white;
+    padding: .5rem 1rem;
+    border: .2rem solid #000 ;
+    border-radius: .6rem;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    
+}
+
+h6 {
+    text-align: end;
+    margin-right: 10px;
+}

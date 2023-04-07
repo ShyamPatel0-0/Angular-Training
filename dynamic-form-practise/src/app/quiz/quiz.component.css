@@ -1,0 +1,19 @@
+.quiz {
+    background-color: #cfe2f3;
+    border: .2rem solid #000 ;
+    font-size: 30px;
+    border-radius: 1rem;
+    width: 50%;
+    margin: auto;
+    
+}
+
+.quiz h2 {
+    text-align: center;
+}
+
+.quiz h6 {
+    text-align: end;
+    margin-right: 10px;
+}
+

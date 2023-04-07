@@ -1,0 +1,22 @@
+<h6>Questions Remaining : {{qremaining}}</h6>
+
+<div class="quiz-card-parent">
+    <form  #frm = "ngForm"   (ngSubmit)="formSubmit()">
+        <div class="quiz-card" *ngFor="let item of mcqData; let k = index">
+            <div class="card">
+                <p>{{item.question}}</p>                                       
+                    <ng-container *ngFor="let i of item.options; let j = index">
+                        <label> {{i}}
+                        </label>
+                        <input type="radio" (change)="onChange()" [disabled]="isDisable" name="{{item.id}}" [(ngModel)]="selectedValue[k]"   value="{{i}}"> 
+                    </ng-container>                                                 
+            </div>
+        </div>
+        <div class="submit-btn-parent">
+            <span>
+                <button [ngStyle]="{'cursor' : qremaining ? 'not-allowed' : 'pointer', 'opacity' : qremaining ? '0.6' : '1' }" class="submit-btn">Submit</button>
+            </span>
+            
+        </div>
+    </form>
+</div>

@@ -1,0 +1,69 @@
+{
+  "mcq": [
+    {
+      "question": "question 1",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "answer": "b",
+      "id": 1
+    },
+    {
+      "question": "question 2",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "answer": "c",
+      "id": 2
+    },
+    {
+      "question": "question 3",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "answer": "a",
+      "id": 3
+    },
+    {
+      "question": "question 4",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "answer": "e",
+      "id": 4
+    },
+    {
+      "question": "question 5",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "answer": "b",
+      "id": 5
+    }
+  ]
+}
