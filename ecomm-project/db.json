@@ -55,7 +55,7 @@
       "price": "200000",
       "color": "black",
       "category": "mobiles",
-      "description": "hello shyam",
+      "description": "Now with more battery optimization ",
       "image": "https://www.91-img.com/gallery_images_uploads/4/1/41364101e71d4fe380d2e83eb6fd7151f3053344.jpg?tr=h-550,w-0,c-at_max",
       "id": 3
     },
@@ -99,6 +99,12 @@
       "email": "pranav@test.com",
       "password": "abc123",
       "id": 2
+    },
+    {
+      "name": "ram",
+      "email": "ram@test.com",
+      "password": "abc123",
+      "id": 3
     }
   ],
   "cart": [],
@@ -110,6 +116,22 @@
       "totalPrice": 320860,
       "userId": 2,
       "id": 2
+    },
+    {
+      "email": "ram@test.com",
+      "address": "andheri 101",
+      "contact": "9874563218",
+      "totalPrice": 216100,
+      "userId": 3,
+      "id": 3
+    },
+    {
+      "email": "bnm",
+      "address": "gfhjm",
+      "contact": "fghj",
+      "totalPrice": 216100,
+      "userId": 2,
+      "id": 4
     }
   ]
 }

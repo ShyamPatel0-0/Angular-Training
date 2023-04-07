@@ -4,14 +4,19 @@ table {
     border-collapse: collapse;
 
 }
+
+
+
 table td, table th {
     border: 1px solid blueviolet;
     padding: 10px;
     min-width: 110px;
+    width: auto;
+    
 }
 
 img {
-    width: 120px;
+    width: auto;
     height: 150px;
 }
 
