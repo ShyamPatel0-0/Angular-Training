@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    height: 90vh;    
+    /* background-color: black; */
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+
+.container > * {
+    flex: 1;
+    min-width: 400px;
+    margin: 5px 15px;
+    background-color: #fff;
+    -webkit-box-shadow: 3px 4px 16px 0px rgba(171,173,170,0.46);
+    -moz-box-shadow: 3px 4px 16px 0px rgba(171,173,170,0.46);
+    box-shadow: 3px 4px 16px 0px rgba(171,173,170,0.46);
+}

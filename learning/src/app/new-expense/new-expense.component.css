@@ -1,0 +1,16 @@
+.expense {
+    /* border: 1px solid black; */
+    height: 100%;
+    
+}
+
+.title {
+    background-color: #00bd56;
+    color: #fff;
+    padding: 5px 15px;
+    font-weight: 550;
+    margin-top: 15px;
+    width: 260px;
+    font-size: 25px;
+    border-bottom-right-radius: 50px;
+}
