@@ -5,7 +5,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "@angular/animations": "^13.4.0",
     "@angular/cli": "^15.1.4",
-    "git": "^0.1.5"
+    "git": "^0.1.5",
+    "mime": "^3.0.0",
+    "primeicons": "^5.0.0",
+    "primeng": "^13.4.2-lts"
   }
 }

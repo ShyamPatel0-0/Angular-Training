@@ -22,23 +22,11 @@ export class QuizCardComponent {
 
   ngOnInit():void {
     this.getMcq(); 
-   // this.dataEmitter.emit(this.qremaining);
+   
   }
 
-  // exercise = new FormGroup({
-  //   mcq: this.fb.array([this.createQuestion()])
-  // });
-
-  // createQuestion(): any {
-  //   return this.fb.control('');
-  // }
-
-  // get mcqControl() {
-  //   return <FormArray>this.exercise.get('mcq');
-  // }
 
   formSubmit() {
-    //console.log("HERE : ",this.exercise.value);
     console.log("Selected values : ",this.selectedValue);
 
   let marks = 0;
@@ -49,31 +37,22 @@ export class QuizCardComponent {
    }
    console.log(marks);
    this.setAchivedMarks(marks, this.mcqData.length);
-  //  this.counter++;
    this.isDisable=true;
    this.mcq.dataSubmitted(true);
    
   }
-  // fun() {
-  //   console.log("hi");
-    
-  // }
-  
+
   onChange() {
     console.log("change");
     console.log(this.qremaining);
 
     this.qremaining = this.mcqData.length - this.selectedValue.length ; 
-    // this.counter = this.qremaining;
     console.log(this.selectedValue)
     
   }
 
   setAchivedMarks(marks:number, total:number) {
-    
-    
     this.mcq.setMarksAchived(marks, total);
-    
   }
 
   getMcq(){
