@@ -10,3 +10,8 @@ body {
     background-color: #f2f7ff;
     font-family: "Poppins", sans-serif;
 }
+
+.p-checkbox .p-checkbox-box.p-highlight {
+    border-color: #22C55E !important;
+    background: #22C55E !important;
+}

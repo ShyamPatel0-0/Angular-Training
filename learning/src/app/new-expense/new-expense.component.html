@@ -1,9 +1,44 @@
 <div class="expense">
     <div class="title"><i class="fa-solid fa-file-circle-plus"></i> Add New Expense</div>
 
-    <form #expens >
+    <div class="form-parent">
+        <form [formGroup]="expense" (ngSubmit)="addExpense()" >
 
-    </form>
+            <div class="parent">
+                <label for="ename" class="e-label">Expense Name</label>
+                <input pInputText formControlName="name" style="pointer-events:fill;" name="ename" placeholder="Enter Expense Name"/>
+            </div>
+
+            <div class="parent">
+                <label for="" class="e-label">Distribute Between</label>
+                <div class="checkbox" > 
+                    <div class="p-inputgroup" formArrayName="distribute" *ngFor="let person of memberControl.controls; let i = index">
+                        <div [formGroupName]="i" class="loadMembers" >                            
+                            <span class="p-inputgroup-addon"><p-checkbox #chk (onChange)="onCheckboxChange(amnt, i)"  value="true" formControlName="isSelect" inputId="{{i}}"></p-checkbox></span>
+                            <input  class="p-inputgroup-addon"   value="{{Members[i].name}}" disabled >
+                            <input pInputText name="ename" (blur)="calcAmount(i, $event)" #amnt style="pointer-events: none;"   type="number"  formControlName="amount" placeholder="Enter Amount" value=""/>                            
+                        </div>                     
+                    </div>             
+                </div>
+            </div>
+
+            <div class="parent">
+                <label for="" class="e-label">Paid By</label>
+                <p-dropdown formControlName="paidBy" [options]="Members" optionLabel="name"></p-dropdown>
+            </div>
+
+            <div class="parent total">
+                <label for="" class="e-label">Total Person : <span class="live-data">{{totalPerson}}</span> </label>
+                <label for="" class="e-label">Total Amount : <span class="live-data">{{totalAmount}}</span> </label>
+                
+            </div>
+
+            <div class="addExpense-btn parent">
+                <button pButton pRipple label="Add Expense" class="p-button-success"></button>
+            </div>
+        </form>
+    </div>
+    
 
 
     

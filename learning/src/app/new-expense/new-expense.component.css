@@ -10,7 +10,51 @@
     padding: 5px 15px;
     font-weight: 550;
     margin-top: 15px;
-    width: 260px;
+    width: 300px;
     font-size: 25px;
     border-bottom-right-radius: 50px;
+}
+
+.form-parent {
+    /* background-color: pink; */
+    margin: 15px;
+    padding: 10px;
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-bottom: 15px;
+}
+
+.loadMembers {
+    display: flex;
+    margin-bottom: 15px;
+    /* background-color: blue; */
+}
+.addExpense-btn {
+    /* background-color: yellowgreen; */
+    border-radius: 15px;
+}
+
+.addExpense-btn button {
+    width: 100%;
+}
+
+.e-label {
+    color: #0a4d68;
+    font-weight: 550;
+    font-size: large;
+    
+}
+
+.total {
+    display: flex;
+    /* background-color: pink; */
+    justify-content: space-between;
+    flex-direction: row;
+}
+.live-data {
+    color: gray;
 }

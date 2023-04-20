@@ -8,7 +8,7 @@
 
 .container > * {
     flex: 1;
-    min-width: 400px;
+    flex-basis: 400px;
     margin: 5px 15px;
     background-color: #fff;
     -webkit-box-shadow: 3px 4px 16px 0px rgba(171,173,170,0.46);
