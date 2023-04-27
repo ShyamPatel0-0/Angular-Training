@@ -21,8 +21,85 @@
       "id": 5
     },
     {
-      "name": "Raj",
+      "name": "Saumya",
       "id": 6
+    }
+  ],
+  "settleUp": [
+    {
+      "id": 1,
+      "settle": []
+    },
+    {
+      "id": 2,
+      "settle": []
+    },
+    {
+      "id": 3,
+      "settle": []
+    },
+    {
+      "id": 4,
+      "settle": []
+    },
+    {
+      "id": 5,
+      "settle": []
+    },
+    {
+      "id": 6,
+      "settle": []
+    }
+  ],
+  "expense": [
+    {
+      "name": "chaa",
+      "paidBy": {
+        "name": "Shyam",
+        "id": 1
+      },
+      "distribute": [
+        {
+          "name": "Shyam",
+          "amount": 50,
+          "userId": 1
+        },
+        {
+          "name": "Pranav",
+          "amount": 50,
+          "userId": 2
+        }
+      ],
+      "totalAmount": 100,
+      "date": "Thu Apr 27 2023",
+      "id": 1
+    },
+    {
+      "name": "experiment",
+      "paidBy": {
+        "name": "Shyam",
+        "id": 1
+      },
+      "distribute": [
+        {
+          "name": "Shyam",
+          "amount": 50,
+          "userId": 1
+        },
+        {
+          "name": "Pranav",
+          "amount": 50,
+          "userId": 2
+        },
+        {
+          "name": "Ruchit",
+          "amount": 50,
+          "userId": 3
+        }
+      ],
+      "totalAmount": 150,
+      "date": "Thu Apr 27 2023",
+      "id": 2
     }
   ]
 }

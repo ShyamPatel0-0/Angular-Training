@@ -17,6 +17,8 @@ import { InputTextModule } from 'primeng/inputtext';
 import { CheckboxModule } from 'primeng/checkbox';
 import { ButtonModule } from 'primeng/button';
 import { DropdownModule } from 'primeng/dropdown';
+import { AccordionModule } from 'primeng/accordion';
+import { PaginatorModule } from 'primeng/paginator';
 
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -41,7 +43,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ButtonModule,
     DropdownModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    AccordionModule,
+    PaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

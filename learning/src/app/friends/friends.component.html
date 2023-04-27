@@ -1,3 +1,21 @@
 <div class="friends">
     
+    <div class="card flex justify-content-center">
+        <p-accordion [multiple]="false" [activeIndex]="0" #tab>
+            
+                <p-accordionTab   class="tab" (selectedChange)="onLoad(i)" #card *ngFor="let item of Members; let i = index;" header="{{item.name}}">
+                    <div class="person">
+                        <div class="e-label">Select Person</div>
+                        <p-dropdown [options]="obj[i]" #memberDropdown [(ngModel)]="selectedValue" (onChange)="onDropdownChange($event)" placeholder="Select a Member"  optionLabel="name"></p-dropdown>                
+                    </div>
+                    <div class="settle" >
+                        <div class="e-label" *ngIf="memberAmount > 0">Amount : <span class="amount-data" [ngClass]="posFlag == -1 ? 'red' : 'green' "> ₹ {{memberAmount}}  </span></div>
+                        <button pButton pRipple label="Settle Up" (click)="settleUp(obj[i],item.id)" class="p-button-blue"></button>                       
+                    </div>                   
+                </p-accordionTab>                
+
+        </p-accordion>
+    </div>
+
+
 </div>

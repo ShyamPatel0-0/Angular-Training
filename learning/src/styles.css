@@ -15,3 +15,41 @@ body {
     border-color: #22C55E !important;
     background: #22C55E !important;
 }
+
+
+
+
+.p-accordion .p-accordion-header .p-accordion-header-link {
+    padding: 0.5rem 1rem;
+    border: 2px solid #0a4d68 !important;
+    background: transparent !important;
+    font-weight: 700;
+    border-radius: 6px;
+    transition: box-shadow 0.2s;
+  }
+  
+  .p-accordion
+    .p-accordion-header:not(.p-disabled).p-highlight
+    .p-accordion-header-link {
+    background: transparent;
+    border-color: #0a4d68 ;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .p-accordion .p-accordion-content {
+    padding: 1.25rem;
+
+    border: 2px solid #0a4d68 !important;
+    background: #ffffff;
+    color: #495057;
+    border-top: 0 !important;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+
+  .p-component {
+    width: 100%;
+  }
