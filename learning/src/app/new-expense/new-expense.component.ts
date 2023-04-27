@@ -53,7 +53,7 @@ export class NewExpenseComponent {
           //console.log(this.Members);
           for (let i = 0; i < result.length; i++) {
               this.createDistribute(this.Members[i].name);      
-          }  
+          }                      
       });
   }
 

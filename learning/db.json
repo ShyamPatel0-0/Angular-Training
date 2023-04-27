@@ -38,6 +38,11 @@
           "name": "Meet",
           "amount": -130,
           "userId": 4
+        },
+        {
+          "name": "Saumya",
+          "amount": -50,
+          "userId": 6
         }
       ]
     },
@@ -58,6 +63,11 @@
           "name": "Meet",
           "amount": -115,
           "userId": 4
+        },
+        {
+          "name": "Saumya",
+          "amount": -50,
+          "userId": 6
         }
       ]
     },
@@ -102,7 +112,18 @@
     },
     {
       "id": 6,
-      "settle": []
+      "settle": [
+        {
+          "name": "Shyam",
+          "amount": 50,
+          "userId": 1
+        },
+        {
+          "name": "Pranav",
+          "amount": 50,
+          "userId": 2
+        }
+      ]
     }
   ],
   "expense": [
@@ -169,6 +190,33 @@
       "totalAmount": 520,
       "date": "Thu Apr 27 2023",
       "id": 2
+    },
+    {
+      "name": "experiment",
+      "paidBy": {
+        "name": "Saumya",
+        "id": 6
+      },
+      "distribute": [
+        {
+          "name": "Shyam",
+          "amount": 50,
+          "userId": 1
+        },
+        {
+          "name": "Pranav",
+          "amount": 50,
+          "userId": 2
+        },
+        {
+          "name": "Saumya",
+          "amount": 50,
+          "userId": 6
+        }
+      ],
+      "totalAmount": 150,
+      "date": "Thu Apr 27 2023",
+      "id": 3
     }
   ]
 }
