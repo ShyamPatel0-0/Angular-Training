@@ -1,0 +1,11 @@
+@import '../../variables';
+.container {
+    border: $border-common;
+
+    margin: $margin-outer;
+    height: $container-height;
+
+    -webkit-box-shadow: $shadow-common;
+    -moz-box-shadow: $shadow-common;
+    box-shadow: $shadow-common;
+}
